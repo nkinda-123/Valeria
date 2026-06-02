@@ -1,4 +1,4 @@
-const API = window.location.origin;
+const API = (window.location.hostname.includes('vercel.app') || window.location.hostname === 'localhost') ? 'https://valeria-yww0.onrender.com' : window.location.origin;
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(link => {
